@@ -1,0 +1,34 @@
+SELECT NOW();
+
+SELECT NOW()::DATE;
+
+SELECT NOW()::TIME;
+
+-- Discard millisecond part from timestamp
+SELECT date_trunc('second', now()::timestamp);
+
+
+-- adding and subtracting
+
+SELECT NOW() - INTERVAL '1 YEAR';
+
+SELECT NOW() - INTERVAL '10 DAYS';
+
+SELECT NOW() + INTERVAL '10 DAYS';
+
+SELECT NOW()::DATE + INTERVAL '10 MONTHS';
+
+SELECT (NOW() + INTERVAL '10 MONTHS')::DATE;
+
+
+-- extracting
+
+SELECT EXTRACT(YEAR FROM NOW());
+
+SELECT EXTRACT(MONTH FROM NOW());
+
+SELECT EXTRACT(DAY FROM NOW());
+
+SELECT EXTRACT(DOW FROM NOW());
+
+SELECT EXTRACT(CENTURY FROM NOW());

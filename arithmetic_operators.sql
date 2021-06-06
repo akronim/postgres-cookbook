@@ -1,0 +1,7 @@
+SELECT 10 + 2;
+
+SELECT 10^2;
+
+SELECT 5!;
+
+SELECT 10 % 3;
