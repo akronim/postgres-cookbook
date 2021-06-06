@@ -1,0 +1,4 @@
+https://www.postgresqltutorial.com/
+
+
+$ pg_restore -U postgres -d dvdrental /home/{user}/Downloads/dvdrental.tar

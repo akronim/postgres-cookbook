@@ -1,0 +1,49 @@
+1. Super key: Opens Activities search
+
+
+2. Ctrl+Alt+T: Ubuntu terminal shortcut
+
+
+3. Super+L or Ctrl+Alt+L: Locks the screen
+
+
+4. Super+D or Ctrl+Alt+D: Show desktop
+
+
+5. Super+A: Shows the application menu
+
+You can use Esc key to move out of the application menu screen.
+
+
+6. Super+Tab or Alt+Tab: Switch between running applications
+
+
+7. Super+Arrow keys: Snap windows
+
+
+8. Super+M: Toggle notification tray
+
+
+9. Super+Space: Change input keyboard (for multilingual setup)
+
+
+10. Alt+F2: Run console
+
+
+11. Ctrl+Q: Close an application window
+
+If you have an application running, you can close the application window using the Ctrl+Q key combination. You can also use Ctrl+W for this purpose.
+
+Alt+F4 is more ‘universal’ shortcut for closing an application window.
+
+It not work on a few applications such as the default terminal in Ubuntu.
+
+
+12. Ctrl+Alt+arrow: Move between workspaces
+Workspace switching
+
+If you are one of the power users who use workspaces, you can use the Ctrl+Alt+Up arrow and Ctrl+Alt+Down arrow keys to switch between the workspaces.
+
+
+13. Ctrl+Alt+Del: Log out
+

@@ -1,0 +1,8 @@
+SELECT * FROM person
+OFFSET 5
+LIMIT 10;
+
+-- same as:
+SELECT * FROM person
+OFFSET 5
+FETCH FIRST 10 ROW ONLY;

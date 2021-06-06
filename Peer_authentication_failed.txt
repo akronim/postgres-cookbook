@@ -1,0 +1,21 @@
+FATAL: Peer authentication failed for user “postgres” Error:
+
+$ cd /etc/postgresql/13/main
+
+$ sudo cp pg_hba.conf /home/{user}/Documents/pg_hba_conf.bak
+
+$ sudo nano pg_hba.conf
+
+# Database administrative login by Unix domain socket
+# >>> FROM:
+local   all             postgres                                peer
+# >>> TO:
+local   all             postgres                                md5
+
+# "local" is for Unix domain socket connections only
+# >>> FROM:
+local   all             all                                     peer
+# >>> TO:
+local   all             all                                     md5
+
+$ sudo service postgresql restart
