@@ -11,6 +11,7 @@
 
 --$ psql
 --# \conninfo
+-- SELECT current_user;
 --# \?  # help
 --# \l  # list
 --# \h  # help
@@ -36,16 +37,16 @@
 
 -- OR:
 --$ sudo su - postgres -c "createuser demorole"
---$ sudo su - postgres -c "createdb demorole_db"
+--$ sudo su - postgres -c "createdb demorole"
 --$ sudo -u postgres psql
---# GRANT ALL PRIVILEGES ON DATABASE demorole_db TO demorole;
+--# GRANT ALL PRIVILEGES ON DATABASE demorole TO demorole;
 
 -- OR:
 --$ sudo -u postgres psql
---# CREATE DATABASE demorole_db;
+--# CREATE DATABASE demorole;
 --# CREATE ROLE demorole WITH LOGIN ENCRYPTED PASSWORD 'demorolepass';
 --# CREATE USER demorole WITH ENCRYPTED PASSWORD 'demorolepass'; # ???
---# GRANT ALL PRIVILEGES ON DATABASE demorole_db TO demorole;
+--# GRANT ALL PRIVILEGES ON DATABASE demorole TO demorole;
 
 -- OR:
 --$ sudo -u postgres psql
@@ -53,7 +54,7 @@
 --# ALTER USER demorole WITH SUPERUSER; # make it superuser
 --# DROP USER demorole; # remove user
 --$ sudo psql -U demorole # To log in as another user, quit the prompt (\q) and then use the command
---$ sudo psql -U demorole -d demorole_db # connect directly to a database
+--$ sudo psql -U demorole -d demorole # connect directly to a database
 
 
 --- >>> To create a superuser:
@@ -65,7 +66,7 @@
 
 -- >>> OR:
 -- $ createuser demorole --password
--- $ createdb demorole_db -O demorole
+-- $ createdb demorole -O demorole
 -- $ psql -l 
 
 -- >>> Drop a role (logged in as postgres user)
@@ -77,6 +78,14 @@
 
 -- >>> reset password
 -- psql -c "alter user postgres with password 'StrongAdminP@ssw0rd'"
+
+
+
+-- # To change user:
+-- \c - a_new_user
+
+-- # To change database and user:
+-- \c a_new_database a_new_user
 
 
 
