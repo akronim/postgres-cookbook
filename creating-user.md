@@ -29,7 +29,7 @@ ALTER USER user_name RENAME TO new_name;
 
 #### reset password
 ```
-alter user john with with encrypted password 'johnnewpass';
+alter user john with encrypted password 'johnnewpass';
 ```
 ```
  psql -c "alter user postgres with password 'StrongAdminP@ssw0rd'"
