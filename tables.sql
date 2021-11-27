@@ -7,9 +7,6 @@ CREATE TABLE person (
     date_of_birth DATE
 );
 
---# \d
---# \d person # describe table person
-
 -- >>> with constraints
 CREATE TABLE person (
     id BIGSERIAL NOT NULL PRIMARY KEY, -- autoincrement
@@ -20,12 +17,6 @@ CREATE TABLE person (
     email VARCHAR(150)
 );
 
--- if you want to see just the table without the sequence:
---# \dt
-
-
--- >>> delete table
---# DROP TABLE person;
 
 -- >>> insert data
 INSERT INTO person (
@@ -39,5 +30,3 @@ VALUES
 ('Anne', 'Smith', 'FEMALE', DATE '1988-01-09', NULL),
 ('Jake', 'Jones', 'MALE', DATE '1990-01-10', 'jake@gmail.com');
 
--- >>> Mockaroo
---# \i /home/{user}/Downloads/person-data.sql
