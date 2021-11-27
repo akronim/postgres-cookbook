@@ -22,8 +22,15 @@ $ sudo -u postgres psql
 # DROP USER demotest; 
 ```
 
+#### change username
+```
+ALTER USER user_name RENAME TO new_name;
+```
 
 #### reset password
+```
+alter user john with password 'johnnewpass';
+```
 ```
  psql -c "alter user postgres with password 'StrongAdminP@ssw0rd'"
 ```
