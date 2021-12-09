@@ -4,6 +4,7 @@
 ```
 ```
 GRANT ALL PRIVILEGES ON DATABASE "testdb" TO test123user ;
+GRANT ALL PRIVILEGES ON DATABASE "testdb" TO postgres ;
 ```
 
 
