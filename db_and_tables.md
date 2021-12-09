@@ -2,6 +2,9 @@
 ```
 # CREATE DATABASE testdb;
 ```
+```
+GRANT ALL PRIVILEGES ON DATABASE "testdb" TO test123user ;
+```
 
 
 
